@@ -102,11 +102,5 @@ img {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-  .hero {
-    margin: auto 40px;
-  }
-  img {
-    max-width: 100%;
-  }
 }
 /*# sourceMappingURL=style.css.map */
