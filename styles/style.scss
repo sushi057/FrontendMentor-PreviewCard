@@ -22,7 +22,7 @@ body{
 }
 
 .container{
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -32,7 +32,9 @@ body{
 }
 
 img{
-    width: 100%;
+    //filter: sepia(53%) saturate(6233%) hue-rotate(241deg) brightness(89%) contrast(92%);
+    max-width: 100%;
+    max-height: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -79,7 +81,6 @@ img{
     }
 }
 
-
 .attribution {
     font-size: 11px; 
     text-align: center; 
@@ -87,5 +88,22 @@ img{
     
 .attribution a {
     color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 500px) {
+
+    .container{
+        flex-direction: row-reverse;
+        
+    }
+
+    .hero{
+        margin: auto 40px;
+    }
+
+    img{
+        max-width: 100%;
+    }
+
 }
  
